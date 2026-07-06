@@ -18,4 +18,4 @@ paths:
 - Platform forks: prefer `Platform.select`/`Platform.OS` for small differences, `*.web.tsx`/`*.android.tsx` file suffixes for diverging implementations.
 - Avoid prop drilling more than 2 levels — restructure with composition (children) first, context only if that fails.
 - Never use array index as `key` for dynamic lists.
-- Long lists render with `FlatList`/`FlashList`-style virtualization, never `ScrollView` + `map`.
+- Long lists render with `FlatList` virtualization, never `ScrollView` + `map`.
