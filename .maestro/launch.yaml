@@ -1,0 +1,6 @@
+appId: com.cklob.arena
+---
+- launchApp
+- assertVisible: 'Home'
+- assertVisible: 'Explore'
+- takeScreenshot: home
