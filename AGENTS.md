@@ -52,6 +52,11 @@ Format: `type: 짧은 한글 설명` — a single short subject line in Korean, 
 
 **Never push unless the user explicitly asks.** Committing autonomously is fine.
 
+## Branch Convention
+
+- Branch off `develop`, named `type/short-kebab-description` — same types as commits.
+- Examples: `feat/login-form`, `fix/splash-hang`, `ci/setup-github-actions`
+
 ## PR Convention
 
 - Base branch: `develop` (fall back to `main` if absent)

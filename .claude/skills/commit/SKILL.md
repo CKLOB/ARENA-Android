@@ -42,4 +42,4 @@ Examples:
 - If the pre-commit hook (lint-staged) or commit-msg hook (commitlint) fails, fix the cause and commit again. Never bypass with `--no-verify`.
 - Before committing code changes, verify with `npm run typecheck` and `npm run test:ci`.
 - **Never push.** Only push when the user explicitly asks.
-- If about to commit feature work on the `main` branch, ask the user first whether to create a branch.
+- If about to commit feature work on the `main`/`develop` branch, ask the user first whether to create a branch (named `type/short-kebab-description`, e.g. `feat/login-form`).

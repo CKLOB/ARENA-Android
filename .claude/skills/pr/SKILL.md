@@ -10,7 +10,7 @@ Create a Pull Request from the commits on the current branch.
 
 ## Steps
 
-1. Check the current branch. If on `main`/`develop`, a PR cannot be created — tell the user and offer to create a branch.
+1. Check the current branch. If on `main`/`develop`, a PR cannot be created — tell the user and offer to create a branch (named `type/short-kebab-description`, e.g. `feat/login-form`).
 2. Determine the base branch: `develop` if it exists on the remote, otherwise `main`.
 3. Understand the **full branch diff** (not just the latest commit) via `git log <base>..HEAD --oneline` and `git diff <base>...HEAD --stat`.
 4. **Read `.github/PULL_REQUEST_TEMPLATE.md` first** — always base the body on the current template file, never on a memorized copy (the template may have changed). If the file doesn't exist, use the section structure below.
