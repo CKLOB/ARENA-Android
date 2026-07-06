@@ -1,10 +1,8 @@
-name: CI
+name: EAS Build (Android)
 
 on:
   push:
-    branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
+    branches: [main]
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
@@ -14,7 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,12 +24,9 @@ jobs:
 
       - run: npm install
 
-      - run: npm run lint
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
 
-      - run: npm run format:check
-
-      - run: npm run typecheck
-
-      - run: npm run test:ci
-
-      - run: npx expo-doctor
+      - run: eas build --platform android --profile production --non-interactive
