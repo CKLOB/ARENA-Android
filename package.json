@@ -2,6 +2,9 @@
   "name": "arena-android",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.2.14",
     "@sentry/react-native": "~7.11.0",
