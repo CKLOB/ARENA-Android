@@ -8,6 +8,7 @@
     "scheme": "arenaandroid",
     "userInterfaceStyle": "automatic",
     "android": {
+      "package": "com.cklob.arena",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
