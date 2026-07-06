@@ -11,6 +11,7 @@ updates:
       - dependency-name: 'react-native*'
       - dependency-name: 'react'
       - dependency-name: 'react-dom'
+      - dependency-name: '@types/react'
       - dependency-name: '@sentry/react-native'
         update-types: ['version-update:semver-major']
       - dependency-name: 'tailwindcss'
