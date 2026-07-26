@@ -33,7 +33,10 @@
       ],
       "expo-secure-store",
       "expo-localization",
-      "@sentry/react-native"
+      "@sentry/react-native",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
