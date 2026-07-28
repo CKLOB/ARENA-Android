@@ -5,7 +5,8 @@ updates:
     target-branch: develop
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
+    # Dependabot 버전 업데이트 PR 생성 비활성화
+    open-pull-requests-limit: 0
     ignore:
       - dependency-name: 'expo*'
       - dependency-name: 'react-native*'
@@ -28,3 +29,5 @@ updates:
     target-branch: develop
     schedule:
       interval: weekly
+    # Dependabot 버전 업데이트 PR 생성 비활성화
+    open-pull-requests-limit: 0
